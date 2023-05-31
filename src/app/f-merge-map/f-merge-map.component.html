@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="header">
+        <h3>MergeMap Operater</h3>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-4">
+            <label for="">Map Ex:-</label><br>
+            <br>
+            <li *ngFor="let data of data">{{data}}</li>
+        </div>
+        <div class="col-4">
+            <label for="">Map+mergeall Ex:-</label><br>
+            <span> 0, 1, 2, 3,</span>
+            <br>
+            <li *ngFor="let data of data2">{{data}}</li>
+        </div>
+        <div class="col-4">
+            <label for="">MergeMap :-</label><br>
+            <span>1, 2, 3, 4</span>
+            <br>
+            <ul id="containerId2"></ul>
+        </div>
+    </div>
+</div>

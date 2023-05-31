@@ -1,0 +1,32 @@
+<p>event works!</p>
+
+<div class="row">
+    <div class="col-4">
+        <div class="card mx-3" style="width: 26rem;">
+            <div class="card-body">
+                    <div class="card-header">Add Videos</div>
+                    <button class="btn btn-success my-2" #addbtn>Add +</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-header" >List 1</div>
+                <ul *ngFor="let video of videoscount">
+                    <li>video {{video}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-header" >List 2</div>
+                <ul id="el-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="container my-5">
+    <div class="row">
+        <div class="col-6">
+            <strong> Ex 01 (Filter by proparty)</strong>
+            <hr>
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                </tr>
+                <tr *ngFor="let data of data1">
+                    <td>{{data?.name}}</td>
+                    <td>{{data?.position}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-6">
+            <strong> Ex 02 (Filter by salary)</strong>
+            <hr>
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>salary</th>
+                </tr>
+                <hr>
+                <tr *ngFor="let data of data2">
+                    <td>{{data?.name}}</td>
+                    <td>{{data?.salary}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

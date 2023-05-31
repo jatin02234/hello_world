@@ -1,0 +1,21 @@
+<div class="row mx-3 my-3">
+    <div class="col-6">
+        <strong>Ex 01 </strong>
+        <br>
+        <br>
+        <button class="btn btn-outline-success" (click)="onclick()">Add Data</button>
+        <hr>
+        <ul id="containerId">
+        </ul>
+    </div>
+    <div class="col-6">
+        <strong>Ex 02 </strong>
+        <br>
+        <br>
+        <button class="btn btn-outline-success" (click)="onclick()">Add Data</button>
+        <hr>
+        <ul *ngFor="let data of array">
+            <li>{{data.name}} is {{data.position}} and his salary is {{data.salary}}.</li>
+        </ul>
+    </div>
+</div>

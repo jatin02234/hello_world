@@ -1,0 +1,41 @@
+<div class="containar">
+    <p>Promic:-</p>
+    <div class="row">
+        <div class="col-3 my-3 mx-2" style=" display:flex; justify-content:center">
+            <button (click)="promic('lenovo')">Lenovo</button>
+            <hr>
+            <button (click)="promic('hp')">Hp</button>
+            <hr>
+            <button (click)="promic('dell')">Dell</button>
+        </div>
+    </div>
+    <div class="cpntainer">
+        <p *ngIf="product">
+            Prodect Name: {{product?.brand}}, Color: {{product?.color}}<br>
+        </p>
+        <p *ngIf="!product">
+            {{product}}
+        </p>
+    </div>
+    <div class="containar">
+        <p>Asny-Await:-</p>
+        <div class="row">
+            <div class="col-3 my-3 mx-2" style=" display:flex; justify-content:center">
+                <button (click)="promic2('lenovo')">Lenovo</button>
+                <hr>
+                <button (click)="promic2('hp')">Hp</button>
+                <hr>
+                <button (click)="promic2('dell')">Dell</button>
+            </div>
+        </div>
+        <div class="cpntainer">
+            <p *ngIf="product">
+                Prodect Name: {{product2?.brand}}, Color: {{product2?.color}}<br>
+            </p>
+            <p *ngIf="!product">
+                {{product2.brand}}
+            </p>
+        </div>
+    </div>
+</div>
+
